@@ -5,7 +5,7 @@ import { theme } from "./src/core/theme";
 import store from "./src/redux/store";
 import { Provider as StoreProvider } from "react-redux";
 
-export default const App = () => (
+const Main = () => (
   <StoreProvider store={store}>
     <Provider theme={theme}>  
       <App />
@@ -13,3 +13,4 @@ export default const App = () => (
   </StoreProvider>
 );
 
+export default Main;
