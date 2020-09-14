@@ -2,14 +2,15 @@ import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 
 import {
-  Catalogue,    
-  CartDetail,
+  Catalogue,
+  LetterDetail,
+
 } from "./screens";
 
 const Router = createStackNavigator(
   {
     Catalogue,
-    CartDetail,
+    LetterDetail
   },
   {
     initialRouteName: "Catalogue",
