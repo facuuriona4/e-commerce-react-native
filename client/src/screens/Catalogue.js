@@ -8,7 +8,7 @@ import {
 
 const Catalogue = () => {
   return (
-    <View style={styles.container}></View>
+    <View style={styles.container}><Text>FUNCIONA</Text></View>
   )
 };
 
