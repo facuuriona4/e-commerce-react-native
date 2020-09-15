@@ -16,12 +16,19 @@ const Letter = ({}) => {
           <View style={styles.containerDescriptionProductText1}>
             <Text style={styles.descriptionProductText1}>samsung smart tv 50 pulgadas uhd 4k hdmi 3d sonido envolvente </Text>            
           </View>
-        </View>
+          <View style={styles.containerDescriptionProductText2}>
+            <Text style={styles.descriptionProductText2}>$ 114.999</Text>            
+            <Text style={styles.descriptionProductTextOFF}>19% OFF</Text>                        
+          </View>
+        </View>        
+        <View style={styles.containerDescriptionProductText3}>
+            <Text style={styles.descriptionProductTextIntereses}>18x $ 6.388 sin interes</Text>            
+            <Text style={styles.descriptionProductTextEnvio}>Envío gratis</Text>            
+        </View>        
         <View style={styles.button}>
           <Button          
             title="Add to cart"
-            color="#ffa64d"
-            accessibilityLabel="Learn more about this purple button"            
+            color="#ffa64d"                      
           />
         </View>
       </View>
@@ -53,13 +60,10 @@ const styles = StyleSheet.create({
     paddingTop: 16,
     paddingLeft: 12,    
     fontWeight: "normal", 
-    textTransform: "capitalize"       
+    textTransform: "capitalize",    
   },
   containerImage: {    
-    height: 340,    
-    borderBottomColor: "rgb(230, 230, 230)",
-    borderBottomWidth: 1.5,
-    borderStyle: "solid",    
+    height: 320,        
     alignItems: "center"
   },
   image: {
@@ -67,26 +71,52 @@ const styles = StyleSheet.create({
     height: 350
   },
   containerDescriptionProduct: {      
-    height: 100,    
-    borderBottomColor: "rgb(230, 230, 230)",
-    borderBottomWidth: 1.5,
-    borderStyle: "solid",    
+    flex: 1,    
+    height: 100,        
   },
   containerDescriptionProductText1: {    
-    flex: 1,    
-    height: 30, 
+    height: 45, 
     paddingLeft: 15,
-    paddingRight: 15,         
+    paddingRight: 15,             
   },
   descriptionProductText1: {
     textTransform: "capitalize",    
     fontWeight: "400",
-    fontSize: 12,
-  },  
-  button: {
+    fontSize: 13,
+  },
+  containerDescriptionProductText2: {            
+    marginLeft: 15,
+    flexDirection: "row"
+  },
+  descriptionProductText2: {
+    fontSize: 20,   
+    letterSpacing: -.5 
+  },
+  descriptionProductTextOFF: {
+    fontSize: 13,
+    marginTop: 7,
+    marginLeft: 5,
+    color: "green",    
+  },
+  containerDescriptionProductText3: {
     flex: 1,
-    alignItems: "center",        
-    justifyContent: "center"    
+    justifyContent: "center",
+    borderBottomColor: "rgb(230, 230, 230)",
+    borderBottomWidth: 1,
+    borderStyle: "solid",            
+    marginLeft: 15,    
+    marginRight: 15
+  },
+  descriptionProductTextIntereses: {
+    color: "green"
+  },
+  descriptionProductTextEnvio: {
+    color: "green"
+  },
+  button: {   
+    paddingTop: 5,   
+    alignItems: "center",            
+    paddingBottom: 5
   },
 });
 
