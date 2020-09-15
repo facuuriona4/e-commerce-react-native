@@ -5,13 +5,15 @@ import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 //Importaciones de Componentes:
 import Navbar from "../components/Navbar";
+import { Catalogue } from ".";
 
 
 const Home = () => {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require('../assets/logo.png')} />
+      {/* //<Image style={styles.image} source={require('../assets/logo.png')} /> */}
       <Navbar/>
+      <Catalogue/>
     </View>
   )
 };
