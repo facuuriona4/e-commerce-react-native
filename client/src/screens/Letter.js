@@ -7,7 +7,7 @@ const Letter = ({}) => {
     <View style={styles.container}>
       <View style={styles.box}>        
         <View style={styles.containerTextHeader}>
-          <Text style={styles.textHeader}>deal of the day</Text>
+          <Text style={styles.textHeader}>oferta del dia</Text>
         </View>
         <View style={styles.containerImage}>
           <Image style={styles.image} source={require('../../assets/products/splash.png')}></Image>
@@ -27,7 +27,7 @@ const Letter = ({}) => {
         </View>        
         <View style={styles.button}>
           <Button          
-            title="Add to cart"
+            title="agregar al carrito"
             color="#ffa64d"                      
           />
         </View>
