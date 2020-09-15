@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     
     borderColor:'#e0e0e0',
     borderBottomWidth: 1,
-    //borderTopWidth:1,
     paddingTop: 10,
   },
   topcont:{
