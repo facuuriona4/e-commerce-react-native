@@ -1,19 +1,18 @@
 import React from "react";
 import { connect } from "react-redux";
-import {View, Image, StyleSheet} from "react-native";
+import {View, Image, StyleSheet, Text} from "react-native";
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 //Importaciones de Componentes:
 import Navbar from "../components/Navbar";
-import { Catalogue } from ".";
+import { Catalogue } from "./";
 
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View style={styles.container}>
-      {/* //<Image style={styles.image} source={require('../assets/logo.png')} /> */}
       <Navbar/>
-      <Catalogue/>
+      <Catalogue navigation={navigation}/>
     </View>
   )
 };
@@ -30,7 +29,7 @@ const styles = StyleSheet.create({
     width:'100%',
     height:'20%',
     marginBottom:3
-     
+
     },
 })
 
