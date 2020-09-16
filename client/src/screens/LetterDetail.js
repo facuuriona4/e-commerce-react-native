@@ -4,12 +4,10 @@ import {
   View
 } from "react-native";
 
-const LetterDetail = () => {
+const LetterDetail = ({sourceImage}) => {
   return (
     <View></View>
   )
 };
 
 export default connect()(LetterDetail);
-
-
