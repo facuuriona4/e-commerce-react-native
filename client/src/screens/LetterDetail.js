@@ -29,25 +29,37 @@ const LetterDetail = ({sourceImage}) => {
           <View style={styles.containerTecnicalDetails}>
             <Text style={styles.key}>Memoria interna:</Text>
             <Text style={styles.value}>128 GB</Text>
-            <Text style={styles.mayor}>></Text>
+            <View style={styles.containerMayor}>
+              <Text style={styles.mayor}>></Text>
+            </View>
           </View>
           <View style={styles.containerTecnicalDetails}>
             <Text style={styles.key}>Es Dual SIM</Text>
             <Text style={styles.value}>No</Text>
-            <Text style={styles.mayor}>></Text>
+            <View style={styles.containerMayor}>
+              <Text style={styles.mayor}>></Text>
+            </View>
           </View>
           <View style={styles.containerTecnicalDetails}>
             <Text style={styles.key}>Memoria RAM:</Text>
             <Text style={styles.value}>12 GB</Text>
-            <Text style={styles.mayor}>></Text>
+            <View style={styles.containerMayor}>
+              <Text style={styles.mayor}>></Text>
+            </View>
           </View>
           <View style={styles.containerTecnicalDetails}>
             <Text style={styles.key}>Color:</Text>
             <Text style={styles.value}>Cosmic black</Text>
-            <Text style={styles.mayor}>></Text>
+            <View style={styles.containerMayor}>
+              <Text style={styles.mayor}>></Text>
+            </View>
           </View>
         </View>
         <View style={styles.priceContainer}><Text style={styles.price}>$ 114.999</Text></View>
+        <View style={styles.containerContainerEnvioConNormalidad}>
+          <View style={styles.containerEnvioConNormalidad}><Text style={styles.envioConNormalidad}>Envío con normalidad</Text></View>
+        </View>
+        <View style={styles.abajoDeEnvioConNormalidad}></View>
       </ScrollView>
     </View>
   )
@@ -102,16 +114,24 @@ const styles = StyleSheet.create({
     backgroundColor: "#f1f1f1"
   },
   key: {
+    marginLeft: "10%",
     fontSize: 15
   },
   value: {
+    marginLeft: "2%",
     fontWeight: "bold",
     fontSize: 15
+  },
+  containerMayor: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "flex-end",
+    marginRight: "6%",
   },
   mayor: {
     color: "#4b90c9",
     fontWeight: "bold",
-    fontSize: 20
+    fontSize: 26
   },
   priceContainer: {
     height: 80,
@@ -120,6 +140,26 @@ const styles = StyleSheet.create({
   price: {
     paddingLeft: "5%",
     fontSize: 30,
+  },
+  containerContainerEnvioConNormalidad: {
+    paddingLeft: "5%",
+  },
+  containerEnvioConNormalidad: {
+    flexShrink: 0,
+    justifyContent: "center",
+    height: 20,
+    width: 140
+  },
+  envioConNormalidad: {
+    borderStyle: "solid",
+    borderWidth: 2,
+    borderColor: "#2968c8",
+    backgroundColor: "#2968c8",
+    borderRadius: 3,
+    color: "white",
+  },
+  abajoDeEnvioConNormalidad: {
+    height: 200,
   },
 });
 
